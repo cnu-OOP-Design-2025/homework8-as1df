@@ -73,7 +73,6 @@ string Staff::getDescription() const {
 }
 
 int Staff::getAttack() const {
-    if (dynamic_cast<Wizard*>(character) != nullptr) return character->getAttack() + 60;
     return character->getAttack() + 20;
 }
 
@@ -90,7 +89,6 @@ string Sword::getDescription() const {
 }
 
 int Sword::getAttack() const {
-    if(dynamic_cast<Knight*>(character) != nullptr) return character->getAttack() + 70;
     return character->getAttack() + 30;
 }
 
@@ -107,7 +105,6 @@ string Bow::getDescription() const {
 }
 
 int Bow::getAttack() const {
-    if(dynamic_cast<Archer*>(character) != nullptr) return character->getAttack() + 65;
     return character->getAttack() + 25;
 }
 
